@@ -1,4 +1,3 @@
--- Create the database if it doesn't already exist
 CREATE DATABASE IF NOT EXISTS Donation;
 
 -- Use the database
@@ -13,14 +12,6 @@ CREATE TABLE IF NOT EXISTS User (
   password VARCHAR(255) NOT NULL,
   email VARCHAR(255) NOT NULL UNIQUE,
   role VARCHAR(255) NOT NULL
-);
-
--- Create the PhoneNumber table
-CREATE TABLE PhoneNumber (
-  phone_id INT AUTO_INCREMENT PRIMARY KEY,
-  user_id INT NOT NULL,
-  phonenumber VARCHAR(255) NOT NULL,
-  FOREIGN KEY (user_id) REFERENCES User(user_id)
 );
 
 -- Donor table
