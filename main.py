@@ -8,7 +8,7 @@ def get_database_connection():
     db_config = {
         "host": "localhost",
         "user": "root",
-        "password": "aditya@123!",
+        "password": "password",
         "database": "Donation"
     }
     conn = mysql.connector.connect(**db_config)
